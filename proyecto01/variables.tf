@@ -1,5 +1,5 @@
 variable "main_tags" {
-  description = "Main tag list by default"
+  description = "Main tags list by default"
   type        = map(string)
 }
 
