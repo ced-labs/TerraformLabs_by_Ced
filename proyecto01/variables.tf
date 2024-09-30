@@ -1,15 +1,15 @@
 variable "main_tags" {
-  description = "Lista de tags predefinidas"
+  description = "Main tag list by default"
   type        = map(string)
 }
 
 variable "specs_ec2" {
-  description = "Lista de specs"
+  description = "Specs VMs"
   type        = map(string)
 }
 
 variable "cidr_block" {
-  description = "Lista de CIDRs"
+  description = "CIDR list"
   type        = map(string)
 }
 
@@ -19,6 +19,6 @@ variable "sg_ingress_cidr" {
 }
 
 variable "ingress_ports_list" {
-  description = "Lista de puertos de ingress"
+  description = "Ingress port list"
   type        = list(number)
 }
