@@ -1,3 +1,4 @@
+#Modulo de ec2 para la creación del pool del instancias para el Load Balancer
 module "ec2" {
   source             = "./modules/ec2"
   instance_ami_ec2   = var.specs_ec2.ami
@@ -7,6 +8,7 @@ module "ec2" {
   instances_pool     = ["server01", "server02", "server03"]
 }
 
+#Modulo de networking para la creación de todos los recursos necesarios para el funcionamiento del Load Balancer
 module "networking" {
   source                    = "./modules/networking"
   cidr_vnet                 = var.cidr_block.cidr_vnet
