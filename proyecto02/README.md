@@ -21,7 +21,7 @@ Mantener consistencia entre los entornos productivos y los entornos previos, es 
     - srv01-data
 
 - ## Snapshots resultantes
-    - srv01-data
+    - snapshot-srv01-data-timestamp
 
 ## 👀 Anotaciones
     - Cualquier disco que se quiera añadir en esta automatización debe:
